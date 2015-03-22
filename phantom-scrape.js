@@ -16,6 +16,7 @@ if (!url) {
 
 page.open(url, function(status) {
   if (status !== "success") {
+    console.log(status);
     output({error: "Unable to open " + url});
     return phantom.exit();
   }
